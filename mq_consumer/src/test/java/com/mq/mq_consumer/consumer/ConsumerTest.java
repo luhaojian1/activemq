@@ -20,6 +20,6 @@ class ConsumerTest {
     public void testConsumer(){
         //参数一： 监听的queue 或者 Topic,
         //参数二：
-        jmsMessagingTemplate.receive("queue");
+        jmsMessagingTemplate.receive("persistent.topic");
     }
 }

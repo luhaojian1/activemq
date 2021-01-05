@@ -32,8 +32,8 @@ class TopicProducerTest {
     public void testProducer(){
         //参数一： destination queue or Topic,
         //参数二：
-        jmsMessagingTemplate.convertAndSend("queue", "send msg to queue");
-        jmsMessagingTemplate.convertAndSend("topic1", "send msg to topic");
+        //jmsMessagingTemplate.convertAndSend("persistent", "send msg to queue");
+        jmsMessagingTemplate.convertAndSend("persistent", "send msg to topic");
     }
 
     @Test

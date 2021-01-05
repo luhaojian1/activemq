@@ -5,7 +5,7 @@ spring:
     name: activemq_procuder
 
   activemq:
-    broker-url: tcp://127.0.0.1:61616
+    broker-url: tcp://10.222.29.171:61617
     user: admin
     password: admin
     #after activeMq 5.15, in order to improve the security, activeMq will not trust the custom serialized objects, so need add below config to accept the object class
@@ -14,7 +14,7 @@ spring:
 
   #(PTP => false, Topic => true)
   jms:
-    pub-sub-domain: false
+    pub-sub-domain: true
     template:
-      delivery-mode: non_persistent #非持久化模式
+      delivery-mode: persistent #非持久化模式
 

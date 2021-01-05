@@ -8,7 +8,7 @@ import javax.jms.*;
 
 public class TopicConsumer {
     public static void main(String[] args) throws JMSException {
-        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://192.168.0.100:61616");
+        ConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://10.222.29.171:61617");
         Connection connection = connectionFactory.createConnection();
         connection.start();
         /*
